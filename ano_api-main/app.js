@@ -1,9 +1,14 @@
+require('dotenv').config();
 
 //const accountSid = 'AC1160313e79d5dd90762d6551f21736f0';
 //const authToken = 'c597d255ed2f5034fbd21b9c0ddf9759';
 
-const accountSid = 'AC4c2054c6db9c5983340fff308435e297';
-const authToken = '704c0e0d53424828ea3aa2cf46172b0e';
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+//const accountSid = 'AC4c2054c6db9c5983340fff308435e297';
+//const authToken = '704c0e0d53424828ea3aa2cf46172b0e';
+
 
 const express = require('express');
 const bodyParser = require('body-parser');
